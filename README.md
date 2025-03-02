@@ -9,10 +9,10 @@ Repozitář poskytuje orientaci v kódech vytvořených v rámci této práce a 
 ## Obsah dokumentace:
 Dokumentace přibližuje strukturu adresářů a fungování jednotlivých kódů, slouží pro seznámení s realizací práce.
 
-* Struktura adresářů je přiblížena v dokumentu: **struktura.md**
-* Postup vygenerování vlastních sysntetických nahrávek je přiblížen v dokumentu: **generovani.md**
-* Postup trénování vlastní neuronové sítě pro zisk postranní informace je přiblížen v dokumentu: **trenovani.md**
-* Způsob použití hybridního systému na syntetických datech pro ověření fungování je popsán v souboru: **testovani.md**
+* **Struktura adresářů** je přiblížena v dokumentu: [struktura.md](https://github.com/TeVr42/bp_dokumentace/blob/main/struktura.md)
+* Postup **vygenerování vlastních sysntetických nahrávek** je přiblížen v dokumentu: [generovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/generovani.md)
+* Postup **trénování vlastní neuronové sítě** pro zisk postranní informace je přiblížen v dokumentu: [trenovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/trenovani.md)
+* Způsob **použití hybridního systému** na syntetických datech pro ověření fungování je popsán v souboru: [testovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/testovani.md)
 
 ## Technické specifikace:
 Kódy práce jsou vyhotoveny za pomoci programovacích jazyků Python (3.12.4) a Matlab (R2025a). Konkrétní použité knihovny jazyka Python včetně verzí jsou uvedeny v souboru *requirements.txt*.
