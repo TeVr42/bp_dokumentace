@@ -8,10 +8,10 @@ Zde je popsán postup vlastního trénování modelu krok za krokem, jeho násle
 
 ## Předzpracování dat
 1. Vytvořte soubor **preprocessed_data** na úrovni hlavního hlavního adresáře se soubory práce
-1. Otevřete adresář **scripts_data_preprocessing**
+1. Otevřete adresář **data_preprocessing_scripts**
 
 ### Předzpracujte příznaky: 
-1. Otevřete soubor **scripts_data_preprocessing/ILD_preprocessing.ipynb** pro předzpracování ILD příznaků nebo **ILD_preprocessing.ipynb** pro IPD příznaky
+1. Otevřete soubor **data_preprocessing_scripts/ILD_preprocessing.ipynb** pro předzpracování ILD příznaků nebo **ILD_preprocessing.ipynb** pro IPD příznaky
 2. Spusťte úvodní buňku s importy
 3. Spusťte buňku s definicí funkce ```preprocess_data(number_of_data, name, mic1, mic2)```
 4. Spusťte vybranou bunku pro předzpracování nebo vytvořte novou dle požadavků, jako parametry uveďte:
@@ -20,7 +20,7 @@ Zde je popsán postup vlastního trénování modelu krok za krokem, jeho násle
   - a čísla mikrofonů, ze kterých má být daný příznak generován (```mic1``` a ```mic2```, možnosti jsou v rozsahu 0-8 začínající horní řadou a končící dolní řadou mikrofonů)
 
 ### Předzpracujte piloty: 
-1. Otevřete soubor **scripts_data_preprocessing/SIR_pilot_preprocessing.ipynb**
+1. Otevřete soubor **data_preprocessing_scripts/SIR_pilot_preprocessing.ipynb**
 2. Spusťte úvodní buňku s importy a buňku s definicí funkce ```preprocess_data(number_of_data)```
 3. Spusťte buňku s příkazem preprocess_data pro vybraný počet zpracovávaných nahrávek (obdobný jako u příznaků)
 
