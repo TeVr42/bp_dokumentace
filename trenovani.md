@@ -25,7 +25,7 @@ Zde je popsán postup vlastního trénování modelu krok za krokem, jeho násle
 3. Spusťte buňku s příkazem preprocess_data pro vybraný počet zpracovávaných nahrávek (obdobný jako u příznaků)
 
 ## Trénování sítě
-1. Otevřete soubor **model_training.ipynb**
+1. Otevřete adresář **training_scripts** v něm soubor **model_training.ipynb**
 2. Spusťte buňku s importy (1. buňka)
 3. Spusťte buňku s nastavení seed (2. buňka)
 4. Spusťte buňku s definováním funkce train_model (3. buňka)
@@ -37,6 +37,10 @@ Zde je popsán postup vlastního trénování modelu krok za krokem, jeho násle
    - ```batch_size``` int obsahující požadovanou velikost dávky při trénování (nepovinný, výchozí je 32)
    - ```learning_rate``` float obsahující požadovanou hodnotu learning ratu (nepovinný, výchozí je 0.001)
    - ```data_split_coeff``` float obsahující požadovaný koeficient rozdělení dat na trénovací a validační část, např. hodnota 0.7 označuje, že 70 % dat je použito jako trénovací, a 30 % jako validační (nepovinný, výchozí je 0.7)
+   - Příklad:
+```
+train_model("../preprocessed_data/", ["ipd17_", "ild17_"], "ipd17_ild17_model_ii", epochs=12, batch_size=32, learning_rate=0.001, data_split_coeff=0.7)
+```
 6. Nechte dokončit trénování (na základě informačních výpisů je možné sledovat průběh)
 7. Natrénovaný model je uložen ve složce **models**, (jeho použití popisuje návod trenovani.md)
 8. Pro vizualizaci průběhu učení je možné zobrazit obsah adresáře **runs** vytvořeného nástrojem Tensorboard, příkaz konzole: ```tensorboard --logdir=runs```
