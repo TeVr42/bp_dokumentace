@@ -17,19 +17,25 @@ Před generováním dat je nutné vytvořit adresář s obsahem originálních n
   - ```destinationFolder``` je proměnná typu string obsahující název adresáře s WSJ0-2mix datasetem, např.  ```"./wsj0-2mix/cv"```
 5. Cílový adresář nyní obsahuje předzpracované soubory typu .wav s 8 znakovými názvy (složené z písmen a číslic)
 
-
 ## Generování datasetu
 Pro vygenerování konkrétních dat z přezpracovaných WSJ nahrávek.
 
 1. Stáhněte soubor **generate_dataset.m**
-2. Vytvořte cílový adresář pro uložení vygenerovaných nahrávek (např. "dataset_train")
-3. Spustě v Matlabu příkaz: <br>
+2. Z repozitáře https://github.com/ehabets/RIR-Generator stáhněte soubory **rir_generator.cpp** a **rir_generator_core.cpp**
+3. Spustě kompilaci RIR generátoru:
+ ```
+mex -setup C++
+mex rir_generator.cpp rir_generator_core.cpp
+ ```
+4. Ujistěte se, že pracovní adresář obsahuje soubor *rir_generator.mexw64*, pokud nastala chyba konzultujte s dokumentací daného [repozitáře](https://github.com/ehabets/RIR-Generator?tab=readme-ov-file)
+5. Vytvořte cílový adresář pro uložení vygenerovaných nahrávek (např. "dataset_train")
+6. Spustě v Matlabu příkaz: <br>
   ```generate_dataset(nr_mix_samples, datafolder_name, wsj_folder) ```<br>
   - ```nr_mix_samples``` je proměnná typu Integer obsahující počet požadovaných nahrávek, např.  ```100``` <br>
   - ```datafolder_name``` je proměnná typu string obsahující název cílového adresáře, např.  ```"./dataset_train"``` <br>
   - ```wsj_folder``` je proměnná typu string obsahující název adresáře s předzpracovanými WSJ nahrávkami, (viz návod Příprava dat), např.  ```"./wsj_data"```
 5. Cílový adresář nyní obsahuje stanovený počet vygenerovaných nahrávek hlavního řečníka v hlučném prostředí ve vybrané modelové situaci, konkrétně obsahuje následující nahrávky:
-  - s*.wav představující pouze nahrávku hlavního řečníka (složka SOI z příslušné mixované nahrávky)
-  - y*.wav představující nežádoucí hluk z mixované nehrávky (promluvy ostatních řečníků a šum)
-  - mix*.wav představující smíchané nahrávky hlavního řečníka v hlučném prostředí (= s*.wav + y*.wav)
+  - *s\*.wav* představující pouze nahrávku hlavního řečníka (složka SOI z příslušné mixované nahrávky)
+  - *y\*.wav* představující nežádoucí hluk z mixované nehrávky (promluvy ostatních řečníků a šum)
+  - *mix\*.wav* představující smíchané nahrávky hlavního řečníka v hlučném prostředí (= s*.wav + y*.wav)
 
