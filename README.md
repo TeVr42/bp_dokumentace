@@ -6,6 +6,8 @@ Tento repozitář slouží jako technická dokumentace k bakalářské práci:
 
 Repozitář poskytuje orientaci v kódech vytvořených v rámci této práce a způsob jejich použití.
 
+Obecně se práce zabývá problémem extrakce řečového signálu hlavního řečníka stojícího ve vybrané oblasti v hlučném prostředí s jinými řečníky. Kódy práce obsahují finální software pro extrakci, skripty sloužící pro vyhodnocení extrakce a analýzu problémů a skripty určené pro trénování neuronových sítí vyvíjených v rámci práce.
+
 ## Obsah dokumentace:
 Dokumentace přibližuje strukturu adresářů a fungování jednotlivých kódů, slouží pro seznámení s realizací práce.
 
