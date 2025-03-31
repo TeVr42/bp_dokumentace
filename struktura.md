@@ -7,7 +7,7 @@ Zde je popsána struktura adresářů bakalářské práce včetně jejich obsah
 Obsahuje třídu klasifikátoru a třídu určenou pro zpracováním datasetů.  
 
 - `classifiers.py` – obsahuje klasifikátor ```MainSpeakerIntensity5Classifier(nn.Module)``` sloužící jako konvoluční neuronová síť pro klasifikaci do 5 tříd, nepovinným parametrem inicializace je počet vstupních příznaků. 
-- `datasets.py` – – obsahuje třídu datasetu ```FeatureDataset(Dataset)``` sloužící pro sekvenční zpracování dat v online režimu při trénování neuronové sítě. Parametry inicializace jsou:
+- `datasets.py` – obsahuje třídu datasetu ```FeatureDataset(Dataset)``` sloužící pro sekvenční zpracování dat v online režimu při trénování neuronové sítě. Parametry inicializace jsou:
   - adresář s příznaky (*input dir*),
   - adresář s labely (*output_dir*),
   - list obsahující názvy zpracovávaných příznaků, tak jak jsou uloženy v souborech (bez číslovky na konci, včetně podtržítka, *feature_names*),
@@ -27,3 +27,16 @@ Adresář určený pro skripty předzpracovávající data nahrávek do vstupní
 - `IPD_preprocessing.ipynb` – notebook sloužící pro předzpracování IPD příznaků dle zadaných parametrů.
 - `ILD_preprocessing.ipynb` – notebook sloužící pro předzpracování ILD příznaků dle zadaných parametrů.
 - `SIR_pilot_preprocessing.ipynb` – notebook sloužící pro předzpracování cílových pilotních signálů do požadované podoby labelů určených pro neuronovou síť.
+
+
+### `functions/`  
+Obsahuje pomocné funkce a funkci algoritmu informované FICA.  
+
+- `functions.py` – soubor s pomocnými funkcemi využívanými pro různé úlohy napříč zdrojovými kódy.
+- `iFICA.py` – funkce pro informovanou rychlou analýzu nezávislých komponent iFICA využívanou pro extrakci.
+
+### `hybrid_systems_scripts/`  
+Obsahuje třídu s celým funkčním hybridním systémem a skript s ukázkou jeho použití.
+
+- `hybrid_system.ipynb` – notebook se skripty zobrazující použití celkového hybridního systému pro extrakci hlavního řečníka ze zvukové nahrávky a přehrání extrahovaného signálu.
+- `hybrid_system.py` – soubor s třídou představující celkový hybridní systém určený pro extrakci a od ní dědící třídy, které využívají konkrétní natrénované modely.
