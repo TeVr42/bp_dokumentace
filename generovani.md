@@ -14,7 +14,7 @@ Před generováním dat je nutné vytvořit adresář s obsahem originálních n
 4. Spustě v terminálu Matlabu příkaz ```wsj_data_clean(baseFolder, destinationFolder)```:
   - ```baseFolder``` je proměnná typu string obsahující název cílového adresáře, např.  ```"./wsj_data"```, <br>
   - ```destinationFolder``` je proměnná typu string obsahující název adresáře s WSJ0-2mix datasetem, např.  ```"./wsj0-2mix/cv"```.
-    Pokud vše proběhlo v pořádku cílový adresář nyní obsahuje předzpracované soubory typu .wav s 8 znakovými názvy (složené z písmen a číslic).
+5. Pokud vše proběhlo v pořádku cílový adresář nyní obsahuje předzpracované soubory typu .wav s 8 znakovými názvy (složené z písmen a číslic).
 
 ## Generování datasetu
 Pro vygenerování konkrétních dat z přezpracovaných WSJ nahrávek.
@@ -26,7 +26,7 @@ Pro vygenerování konkrétních dat z přezpracovaných WSJ nahrávek.
 mex -setup C++
 mex rir_generator.cpp rir_generator_core.cpp
  ```
-4. Ujistěte se, že pracovní adresář obsahuje soubor *rir_generator.mexw64*, pokud nastala chyba konzultujte s dokumentací daného [repozitáře](https://github.com/ehabets/RIR-Generator?tab=readme-ov-file).
+4. Pokud vše proběhlo v pořádku pracovní adresář obsahuje soubor *rir_generator.mexw64*, pokud nastala chyba konzultujte s dokumentací daného [repozitáře](https://github.com/ehabets/RIR-Generator?tab=readme-ov-file).
 5. Vytvořte cílový adresář pro uložení vygenerovaných nahrávek (např. "dataset_train").
 6. Spustě v Matlabu příkaz ```generate_dataset(nr_mix_samples, datafolder_name, wsj_folder) ```:<br>
   - ```nr_mix_samples``` je proměnná typu Integer obsahující počet požadovaných nahrávek, např.  ```100```, <br>
