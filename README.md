@@ -1,23 +1,32 @@
-# Dokumentace k realizaci bakalářské práce
-Tento repozitář slouží jako technická dokumentace k bakalářské práci:
+# 📖 Dokumentace k realizaci bakalářské práce  
+Tento repozitář slouží jako technická dokumentace k bakalářské práci:  
 
-**Hybridní systém pro extrakci řečového signálu na základě informovaném algoritmu FICA** 
-<br> autor: Tereza Vrbová, vedoucí práce: prof. Ing. Zbyněk Koldovský, Ph.D.
+**Hybridní systém pro extrakci řečového signálu na základě informovaného algoritmu FICA**  
+👩‍🎓 **Autor:** Tereza Vrbová  
+👨‍🏫 **Vedoucí práce:** prof. Ing. Zbyněk Koldovský, Ph.D.  
 
-Repozitář poskytuje orientaci v kódech vytvořených v rámci této práce a způsob jejich použití.
+Repozitář poskytuje orientaci v kódech vytvořených v rámci této práce a způsob jejich použití.  
 
-Obecně se práce zabývá problémem extrakce řečového signálu hlavního řečníka stojícího ve vybrané oblasti v hlučném prostředí s jinými řečníky. Kódy práce obsahují finální software pro extrakci, skripty sloužící pro vyhodnocení extrakce a analýzu problémů a skripty určené pro trénování neuronových sítí vyvíjených v rámci práce.
+Obecně se práce zabývá problémem **extrakce řečového signálu** hlavního řečníka stojícího ve vybrané oblasti v hlučném prostředí s jinými řečníky. Kódy obsahují:  
+- ✅ Finální software pro extrakci,
+- 📊 Skripty pro vyhodnocení extrakce a analýzu problémů,
+- 🤖 Skripty pro trénování neuronových sítí vyvíjených v rámci práce.
 
-## Obsah dokumentace:
-Dokumentace přibližuje strukturu adresářů a fungování jednotlivých kódů, slouží pro seznámení s realizací práce.
+## 📂 Obsah dokumentace:  
+Dokumentace přibližuje **strukturu adresářů** a fungování jednotlivých kódů.  
 
-* **Struktura adresářů** je přiblížena v dokumentu: [struktura.md](https://github.com/TeVr42/bp_dokumentace/blob/main/struktura.md)
-* Postup **vygenerování vlastních sysntetických nahrávek** je přiblížen v dokumentu: [generovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/generovani.md)
-* Postup **trénování vlastní neuronové sítě** pro zisk postranní informace je přiblížen v dokumentu: [trenovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/trenovani.md)
-* Způsob **použití hybridního systému** na syntetických datech pro ověření fungování je popsán v souboru: [testovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/testovani.md)
+📜 **Detailní dokumenty:**  
+- 📁 **Struktura adresářů** → [struktura.md](https://github.com/TeVr42/bp_dokumentace/blob/main/struktura.md)  
+- 🎤 **Generování vlastních syntetických nahrávek** → [generovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/generovani.md)  
+- 🤖 **Trénování neuronové sítě** pro zisk postranní informace → [trenovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/trenovani.md)  
+- 📊 **Testování hybridního systému** na syntetických datech → [testovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/testovani.md)  
 
-## Technické specifikace:
-Kódy práce jsou vyhotoveny za pomoci programovacích jazyků Python (3.12.4) a Matlab (R2025a). Konkrétní použité knihovny jazyka Python včetně verzí jsou uvedeny v souboru *requirements.txt*.
+## ⚙️ Technické specifikace:  
+💻 Kódy práce jsou napsány v **Pythonu (3.12.4)** 🐍 a **Matlabu (R2025a)** 📊.  
+📦 **Použité Python knihovny** jsou uvedeny v souboru **requirements.txt**.  
 
-## Pro koho je dokumentace určena?
-Tato dokumentace je určena především čtenářům bakalářské práce, kteří se zajímají i o její konkrétní realizaci, především tedy vedoucímu práce, oponentovi práce a případně hodnotící komisi.
+## 🎯 Pro koho je dokumentace určena?  
+Tato dokumentace je určena především čtenářům bakalářské práce, kteří se zajímají o její konkrétní realizaci, především tedy:  
+👨‍🏫 **Vedoucímu práce**  
+🧐 **Oponentovi práce**  
+⚖️ **Hodnotící komisi**  
