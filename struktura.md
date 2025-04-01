@@ -58,3 +58,8 @@ Obsahuje soubory se srovnáním SIR extrakce s využitím jednotlivých pilotní
 - `SIR_pilots_comp.csv` – tabulka s výslednými hodnotami SIR extrakce pro testované cílové ideální piloty na trénovacích datech.
 - `SIR_test.csv` – tabulka s výslednými hodnotami SIR extrakce pro ideální piloty (energie SOI, cílový pilot), referenční piloty (slepé, částečně slepé) a piloty získané s použitím natrénovaných modelů v rámci navrhované metody na testovacích datech.
 - `SIR_train.csv` – tabulka s výslednými hodnotami SIR extrakce pro ideální piloty (energie SOI, cílový pilot) a referenční piloty (slepé, částečně slepé) na trénovacích datech.
+
+### `training_scripts/`  
+Obsahuje soubor určený pro trénování neuronových sítí pro odhad pilotních signálů dle navrhované metody. Použití je přiblíženo v [trenovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/trenovani.md).
+
+- `model_training.ipynb` – skript určený pro vlastní trénovaní neuronové sítě. Obsahuje přehledy detailů trénování modelů představených v práci.
