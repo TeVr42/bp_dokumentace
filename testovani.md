@@ -17,8 +17,27 @@ Po úspěšné přípravě dat a instalaci potřebných knihoven pokračujte v s
 2. Spusťte výpočet referenčních hodnot pomocí ```SIR_df = get_SIR_for_basic_pilots(number_of_samples)```. Výsledkem je tabulka s hodnotami uložená v proměnné ```SIR_df```.
 3. Tabulku uložte pomocí ```SIR_df.to_csv('../results/SIR_test.csv', index=True)```.
 
+ALTERNATIVNĚ: Pokud jsou data již předpočítaná, tabulku ```SIR_df``` načtěte:
+```
+SIR_df = pd.read_csv('../results/SIR_test.csv', index_col=0)
+```
 
 ## Spočítání hodnot SIR extrakce s natrénovanými modely
 1. Spusťte buňku s definicí funkce ```get_improvement_for_hybrid_system(hybrid_system, number_of_samples)```.
-...
+2. Dle předpřipravených buněk inicializujte vybraný hybridní systém na základě vstupních příznaků. Jako argument inicializace hybridního systému slouží cesta k natrénovanému modelu. Např. pro systém s modelem ILD 14 + 17 + 35:
+```
+hybrid_system = HybridSystem_IPD14_IPD17_IPD35(model_path="./models/ipd14_ipd17_ipd35_model.pt")
+```
+3. Zavolejte příkaz pro výpočet hodnot SIR extrakce a zlepšení SIR pro testovací dataset:
+```
+SIR_imp_model_pilot, SIR_model_pilot = get_improvement_for_hybrid_system(hybrid_system, number_of_samples)
+```
+4. Uložte spočítané hodnoty do tabulky s referenčními hodnotami, např.:
+```
+SIR_df['SIR_ipd14_ipd17_ipd35_model_pilot'] = SIR_model_pilot
+SIR_df['imp_SIR_ipd14_ipd17_ipd35_model_pilot'] = SIR_imp_model_pilot
+```
+5. Tabulku uložte pomocí ```SIR_df.to_csv('../results/SIR_test.csv', index=True)```.
 
+## Vizualizace výsledků
+Následující buňky obsahují vizualizaci spočítaných výsledků - přehled průměrů a krabicové grafy srovnání modelů a referenčních pilotů.
