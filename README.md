@@ -16,6 +16,7 @@ Obecně se práce zabývá problémem **extrakce řečového signálu** hlavníh
 Dokumentace přibližuje **strukturu adresářů** a fungování jednotlivých kódů.  
 
 📜 **Detailní dokumenty:**  
+- 📌 **Ukázka použití hybridního systému** na ukázkových datech → [example.md](https://github.com/TeVr42/bp_dokumentace/blob/main/example.md)  
 - 📁 **Struktura adresářů** → [struktura.md](https://github.com/TeVr42/bp_dokumentace/blob/main/struktura.md)  
 - 🎤 **Generování vlastních syntetických nahrávek** → [generovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/generovani.md)  
 - 🤖 **Trénování neuronové sítě** pro zisk postranní informace → [trenovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/trenovani.md)  
