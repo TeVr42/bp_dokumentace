@@ -13,6 +13,7 @@ Obsahuje třídu klasifikátoru a třídu určenou pro zpracováním datasetů.
   - list obsahující názvy zpracovávaných příznaků, tak jak jsou uloženy v souborech (bez číslovky na konci, včetně podtržítka, *feature_names*),
   - nepovinná hodnota doplňovaných okrajů na počátek a konec nahrávky (*default_padding_value*),
   - nepovinný počet oken nahrávek (*n_frames*, pokud nedoplněn, je automaticky spočítán).
+- `hybrid_system.py` – soubor s třídou představující celkový hybridní systém určený pro extrakci a od ní dědící třídy, které využívají konkrétní natrénované modely.
 
 ### `data_analysis_scripts/`  
 Adresář určený pro skripty a notebooky související s analýzou dat před a po trénování.  
@@ -28,6 +29,8 @@ Adresář určený pro skripty předzpracovávající data nahrávek do vstupní
 - `ILD_preprocessing.ipynb` – notebook sloužící pro předzpracování ILD příznaků dle zadaných parametrů.
 - `SIR_pilot_preprocessing.ipynb` – notebook sloužící pro předzpracování cílových pilotních signálů do požadované podoby labelů určených pro neuronovou síť.
 
+### `example_data/`  
+Soubor s ukázkou vzorových dat vytvořených v rámci navrhovaného způsobu generování databáze. Skládají se z *s\*.wav* souborů se signálem hlavního mluvčího a *y\*.wav* souboru s příslušnými interferencemi. Nahrávka hlavního mluvčího v hlučném prostředí vznikne sečtením těchto dvou souborů. Ukázka jejich extrakce je přiblížena v [testovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/testovani.md). 
 
 ### `functions/`  
 Obsahuje pomocné funkce a funkci algoritmu informované FICA.  
@@ -35,11 +38,6 @@ Obsahuje pomocné funkce a funkci algoritmu informované FICA.
 - `functions.py` – soubor s pomocnými funkcemi využívanými pro různé úlohy napříč zdrojovými kódy.
 - `iFICA.py` – funkce pro informovanou rychlou analýzu nezávislých komponent iFICA využívanou pro extrakci.
 
-### `hybrid_systems_scripts/`  
-Obsahuje třídu s celým funkčním hybridním systémem a skript s ukázkou jeho použití.
-
-- `hybrid_system.ipynb` – notebook se skripty zobrazující použití celkového hybridního systému pro extrakci hlavního řečníka ze zvukové nahrávky a přehrání extrahovaného signálu.
-- `hybrid_system.py` – soubor s třídou představující celkový hybridní systém určený pro extrakci a od ní dědící třídy, které využívají konkrétní natrénované modely.
 ### `matlab_scripts/`  
 Obsahuje soubory s kódy v jazyce Matlab použitými především pro generování dat. Více je jejich použití přiblíženo v souboru [generovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/generovani.md).
 
