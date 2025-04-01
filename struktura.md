@@ -30,7 +30,7 @@ Adresář určený pro skripty předzpracovávající data nahrávek do vstupní
 - `SIR_pilot_preprocessing.ipynb` – notebook sloužící pro předzpracování cílových pilotních signálů do požadované podoby labelů určených pro neuronovou síť.
 
 ### `example_data/`  
-Soubor s ukázkou vzorových dat vytvořených v rámci navrhovaného způsobu generování databáze. Skládají se z *s\*.wav* souborů se signálem hlavního mluvčího a *y\*.wav* souboru s příslušnými interferencemi. Nahrávka hlavního mluvčího v hlučném prostředí vznikne sečtením těchto dvou souborů. Ukázka jejich extrakce je přiblížena v [example.md](https://github.com/TeVr42/bp_dokumentace/blob/main/example.md). 
+Soubor s ukázkou vzorových dat vytvořených v rámci navrhovaného způsobu generování databáze. Skládají se z *s\*.wav* souborů se signálem hlavního mluvčího a *y\*.wav* souboru s příslušnými interferencemi. Nahrávka hlavního mluvčího v hlučném prostředí vznikne sečtením těchto dvou souborů. Ukázka jejich extrakce je přiblížena v souboru `example.ipynb`.
 
 ### `functions/`  
 Obsahuje pomocné funkce a funkci algoritmu informované FICA.  
