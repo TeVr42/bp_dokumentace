@@ -1,0 +1,1 @@
+## Ukázka fungování hybridního systému
