@@ -40,3 +40,21 @@ Obsahuje třídu s celým funkčním hybridním systémem a skript s ukázkou je
 
 - `hybrid_system.ipynb` – notebook se skripty zobrazující použití celkového hybridního systému pro extrakci hlavního řečníka ze zvukové nahrávky a přehrání extrahovaného signálu.
 - `hybrid_system.py` – soubor s třídou představující celkový hybridní systém určený pro extrakci a od ní dědící třídy, které využívají konkrétní natrénované modely.
+### `matlab_scripts/`  
+Obsahuje soubory s kódy v jazyce Matlab použitými především pro generování dat. Více je jejich použití přiblíženo v souboru [generovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/generovani.md).
+
+- `generate_dataset.m` – skript určení pro generování smíchaných nahrávek dat pro zadanou situaci.
+- `plot_generovani_pozic.m` – skript, který vizualizuje rozložení řečníků a mikrofonů pro zadanou situaci.
+- `wsj_data_clean.m` – skript určený pro zpracování WSJ datasetu do formátu využitého při generování - sjednocení názvů a zbavení se opakujících se hodnot.
+
+### `models/`  
+Obsahuje natrénované neuronové sítě pro odhad pilotních signálů. Celkem 9 natrénovaných modelů.
+
+- Formát uložení dat je název příznaku (ipd/ild) s dvojicí použitých mikrofonů pro daný příznak (př. 17 - mikrofon 1 a 7) a přípona *model.pt*.
+
+### `results/`  
+Obsahuje soubory se srovnáním SIR extrakce s využitím jednotlivých pilotních signálů, originální hodnoty, konečné hodnoty a zlepšení (= finální - zlepšení).
+
+- `SIR_pilots_comp.csv` – tabulka s výslednými hodnotami SIR extrakce pro testované cílové ideální piloty na trénovacích datech.
+- `SIR_test.csv` – tabulka s výslednými hodnotami SIR extrakce pro ideální piloty (energie SOI, cílový pilot), referenční piloty (slepé, částečně slepé) a piloty získané s použitím natrénovaných modelů v rámci navrhované metody na testovacích datech.
+- `SIR_train.csv` – tabulka s výslednými hodnotami SIR extrakce pro ideální piloty (energie SOI, cílový pilot) a referenční piloty (slepé, částečně slepé) na trénovacích datech.
