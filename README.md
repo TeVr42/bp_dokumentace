@@ -16,11 +16,11 @@ Obecně se práce zabývá problémem **extrakce řečového signálu** hlavníh
 Dokumentace přibližuje **strukturu adresářů** a fungování jednotlivých kódů.  
 
 📜 **Detailní dokumenty:**  
-- 📌 **Ukázka použití hybridního systému** na ukázkových datech → [example.md](https://github.com/TeVr42/bp_dokumentace/blob/main/example.md)  
+- 📌 **Ukázka použití hybridního systému** na ukázkových nahrávkách → [example.md](https://github.com/TeVr42/bp_dokumentace/blob/main/example.md)  
 - 📁 **Struktura adresářů** → [struktura.md](https://github.com/TeVr42/bp_dokumentace/blob/main/struktura.md)  
-- 🎤 **Generování vlastních syntetických nahrávek** → [generovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/generovani.md)  
+- 🎤 **Generování vlastních uměle smíchaných nahrávek** → [generovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/generovani.md)  
 - 🤖 **Trénování neuronové sítě** pro zisk postranní informace → [trenovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/trenovani.md)  
-- 📊 **Testování hybridního systému** na syntetických datech → [testovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/testovani.md)  
+- 📊 **Testování hybridního systému** na připravených nahrávkách → [testovani.md](https://github.com/TeVr42/bp_dokumentace/blob/main/testovani.md)  
 
 ## ⚙️ Technické specifikace:  
 💻 Kódy práce jsou napsány v **Pythonu (3.12.4)** 🐍 a **Matlabu (R2025a)** 📊.  
